@@ -1,0 +1,837 @@
+header{
+    background-color: #000000;
+    height: 9.0vh;
+}
+#linguas 
+{
+padding-left: 10%;
+
+}
+#lingua-btn {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 0;
+    margin: 0;
+}
+
+#bandeira-br {
+  width: 24px;
+  height: 18px;
+  border-radius: 3px;
+    margin: 0; 
+    vertical-align: middle; 
+}
+
+#seta {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+#logo{ 
+    grid-column: 2;
+}
+
+
+/* Bloqueia o scroll do body quando o modal estiver aberto */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Modal base (overlay escuro em tela cheia) */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparente */
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Conteúdo central */
+.modal-content {
+  background-color: #282828 !important; /* fundo escuro */
+  color: white !important;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+/* Botão de fechar (X) */
+.modal-content .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Inputs */
+.modal-content input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #3a3a3a !important;
+  color: white;
+  font-size: 14px;
+}
+
+/* Botão principal */
+.btn-verde {
+  background-color: #00b33c;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-verde:hover {
+  transform: scale(1.05);
+}
+
+
+/* Links abaixo */
+.links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: #00cc66;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.link-btn:hover {
+  color: #00ff88;
+}
+.menu {
+  background-color: #252525;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.menu button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.menu button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00b33c; /* Verde da linha inferior do menu ajustado */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.menu button:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+#banner{
+width: 100%;
+
+}
+
+#linha1{
+   
+    border-bottom: 1px #007118;
+    background-color: #007118;
+    z-index: 99;
+    width:4%;
+    position: absolute;
+    top:50px;
+    left: 122vh;
+    transform: translate(-50%,-50%);
+    height: 4px;  
+    border-color: #007118;
+    
+   
+}
+
+#linha2{
+   
+    border-bottom: 1px #007118;
+    background-color: #007118;
+    z-index: 99;
+    width:4%;
+    position: absolute;
+    top:50px;
+    left: 132vh;
+    transform: translate(-50%,-50%);
+    height: 4px;  
+    border-color: #007118;
+}
+
+#linha3{
+   
+    border-bottom: 1px #007118;
+    background-color: #007118;
+    z-index: 99;
+    width:6%;
+    position: absolute;
+    top:50px;
+    left: 144vh;
+    transform: translate(-50%,-50%);
+    height: 4px;  
+    border-color: #007118;
+}
+
+#linha4{
+   
+    border-bottom: 1px #007118;
+    background-color: #007118;
+    z-index: 99;
+    width:5%;
+    position: absolute;
+    top:50px;
+    left: 158vh;
+    transform: translate(-50%,-50%);
+    height: 4px;   
+    border-color: #007118;  
+}
+
+#lv{
+   
+    border-bottom: 1px #007118;
+    background-color: #007118;
+    z-index: 99;
+    width: 80%;
+    top:80px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    height: 4px;
+    margin-top: 90px;
+
+}
+
+#gmail
+{
+height: 5vh;
+
+}
+
+#gmail>ul{
+    
+    font-size: 16px;
+    color: #1c1c1c;
+    display: inline-block;
+    margin-right: 45px;
+    position: relative;
+    padding: 0;
+    
+    
+}
+
+#left{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 15%;
+    color:#ffffff;
+    background-color:#252525;
+ 
+}
+
+
+#H2{position: relative;  
+    font-size: 45px;
+    font-family: "Cairo", sans-serif;
+    color: #292929;
+    top: 110px;
+}
+
+#p{
+    position: relative;
+    color: rgb(167, 167, 167);
+    top: 110px;
+}
+
+#b{padding-left: 18px;}
+
+
+#des{
+    margin-left: 18px;
+    padding-left: 18px;
+    padding-top: 4px;
+    width: 140px;
+    border-radius: 15px;
+    font-size: 25px;     
+    font-weight: bold;     
+    color: white;         
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+#des:link, 
+#des:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#des:hover, 
+#des:active { 
+    color: #ffffff;
+}
+
+#img2{
+ 
+ width: 100px;
+ margin-left: 15px;
+
+}
+
+
+
+#ass{
+    margin-left: 25px;
+    margin-top: 5px;
+    font-weight: bold;
+    margin-right: 6%;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+   
+}
+
+#ass:link, 
+#ass:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ass:hover, 
+#ass:active { 
+    color: #ffffff;
+}
+
+#posto-de-espaco{
+    margin-left: 100px;
+}
+
+#his{
+    margin-left: 25px;
+    margin-top: 5px;
+    font-weight: bold;
+    margin-right: 6%;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+#his:link, 
+#his:visited {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#his:hover, 
+#his:active { 
+    color: #ffffff;
+}
+
+#log{
+    margin-left: 25px;
+    font-weight: bold;     /* deixa o texto em negrito */
+    color: white;          /* cor do texto */
+    border-radius: 8px;    /* bordas arredondadas */
+}
+#nav-drop{
+    list-style: none;
+    margin-left: 50%;
+    padding-top: 5px;
+    padding-left: 3%;
+    text-align: left;
+    display: flex;
+    align-items: center; /* Garante alinhamento vertical */
+
+    
+}
+
+#drop{
+    list-style: none;
+    padding: 0;
+    background-color: #252525;
+   color: #fff;
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+    top: 50px;
+    transition: 0.5s;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 130px; 
+    min-width: 130px;
+}
+#drop li {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+    white-space: nowrap; /* impede quebra de linha */
+}
+
+#drop li:last-child {
+    border-bottom: none;
+}
+#drop li:hover {
+    background-color: #007118; /* cor de destaque ao passar o mouse */
+    color: #fff;
+}
+
+
+#nav-drop:hover #drop{
+    color: #1c1c1c;
+    opacity: 1;
+    z-index: 99;
+    top: 40px;
+}
+
+#user{
+    margin-left: 20px;
+    width: 12px;
+}
+#L{
+    margin-left: 10px;
+}
+
+#frase{
+
+    position: absolute;
+    top: 250px; 
+    left: 250px;
+    color: white;
+    font-size: 54px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#btn{
+    position: absolute;
+    top: 400px; 
+    left: 400px; 
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #007118; 
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#sobre{
+    display: flex;
+       
+}
+
+#ppp{
+    padding-top: 3%;
+}
+
+#rr {
+    width: 13%;
+    background-color: #007118;
+    height: 4px;
+    border-color: #007118;
+    border-bottom: 1px #007118;
+    transform: translate(-50%,-50%);
+    margin-left: 68px;
+}
+
+#pro{
+    margin-top: 8%;
+    margin-left: 100px;
+    border-radius: 30px;
+}
+
+#texto{
+    margin-top: 200px;
+    margin-left: 45px;
+    font-size: 25px;
+    
+}
+
+#h{
+    font-family: "Kavoon", serif;
+    font-size:23px;
+}
+
+#emp{
+    width: 100%;
+    font-size: 25px;
+}
+
+#a{
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+#b{
+    margin-top: 15px;
+    margin-left: 29%;
+}
+
+#c{
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+#d{
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+#sobree{
+    display: flex;
+       
+}
+
+#pppp{
+    padding-top: 3%;
+    width: 60%;
+}
+
+#rrr {
+
+    width: 21%;
+    background-color: #007118;
+    height: 4px;
+    border-color: #007118;
+    border-bottom: 1px #007118;
+    transform: translate(-50%,-50%);
+    margin-left: 110px;
+
+}
+
+#proo{
+    margin-top: 20%;
+    margin-right: 150px;
+    border-radius: 30px;
+}
+
+#textoo{
+    margin-top: 200px;
+    margin-left: 165px;
+    font-size: 25px;
+    
+}
+
+#hh{
+    font-family: "Kavoon", serif;
+    font-size:23px;
+}
+
+#line {
+
+    width: 20%;
+    background-color: #007118;
+    height: 4px;
+    border-color: #007118;
+    border-bottom: 1px #007118;
+    transform: translate(-50%,-50%);
+    margin-left: 50%;
+
+}
+
+#cat{
+    margin-top: 90px;
+    text-align: center;
+    border: 100px;
+}
+
+#categoria{
+    
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;    /* Centraliza os itens horizontalmente */
+    text-align: center;   
+
+}
+
+
+#ca{
+    margin-top: 70px;
+}
+
+#face{
+    width: 19px;
+    margin-left: 200px;
+    
+    
+}
+#tik{
+    width: 29px;
+    margin-left: 15px;
+}
+
+#insta{
+    width: 38px;
+    margin-left: 15px;
+    align-content: center;
+
+    align-self: center;
+}
+
+#Instagram:hover svg {
+    fill: White;
+    transition: 0.5s;
+}
+
+
+#barra{
+    padding-left: 18px;
+    
+}
+
+#b{padding-left: 18px;}
+
+#leftt{
+    display: flex;
+    position: relative;
+    top: 12px;
+    color:#ffffff;
+    height: 100px;
+    background-color: #252525;
+    margin-top: 50px;
+      align-items: center;
+}
+
+
+#barrra{
+    padding-left: 50px;
+    padding-top: 6px;
+    font-size: 60px;
+    color: #007118;
+    
+}
+
+#bb{padding-left: 38px;
+    padding-top: 30px;
+    font-size: x-large;
+}
+
+#bt{
+    padding-left: 500px;
+    padding-top: 30px;
+    font-size: x-large;
+
+}
+
+/* Codigo do Texto */
+#toggle-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#toggle-text {
+    background-color: #007118;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+#toggle-text:hover {
+    background-color: #009c22;
+    transform: scale(1.05);
+}
+
+#more-text {
+    display: inline;
+    white-space: pre-wrap;
+}
+/* Codigo do Texto */
+
+
+/* Codigo do Modal */
+/* Centralização na tela */
+#openModal {
+    width: 50%;
+    max-width: calc(100% - 50px); /* Para manter 25px de margem de cada lado */
+    margin: 0 auto;
+    display: block;
+    margin-top: 100px; /* Ajuste vertical (ou use flex se quiser centralizar na tela toda) */
+
+    height: 200px;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #007118;
+    background-image: url('sua-imagem.jpg'); /* <- Substitua pela URL da imagem */
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px #494949;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Efeito hover */
+#openModal:hover {
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+
+
+/* Modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    animation: fadeIn 0.4s ease;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Botão de fechar */
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+/* Texto */
+.modal-text {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo básico para o modal */
+#myModal {
+    display: none; /* Esconde o modal inicialmente */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+#closeModal {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Bloqueio do scroll do body */
+body.no-scroll {
+    overflow: hidden;
+}
