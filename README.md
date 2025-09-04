@@ -23,11 +23,8 @@ npm install  \
 composer global require laravel/installer 
 
 ## Clone o repositório
-git clone https://diogo-cotemig.github.io/EletroDescarte/
+git clone https://github.com/Diogo-Cotemig/EletroDescartes-Laravel
 
-
-Caso haja falhas, também tem esse repositorio:
-https://github.com/Diogo-Cotemig/EletroDescartes-Laravel
 ## Instale as dependências (se houver)
 composer install  \
 npm install 
